@@ -1,0 +1,21 @@
+
+<div class="container">
+ <div class="row">
+  <div class="card col-xs-12 col-sm-10 col-md-6 col-lg-8  ">
+       <div class="youtube_url">
+        <iframe class="video" width="530" height="315" src="https://www.youtube.com/embed/<%= @micropost.youtube_url.last(11)%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-body">
+        <h2><%= @micropost.name %></h2>
+        <p class="card-text"><%= @micropost.content %></p>
+        <% if @micropost.user.id == current_user.id %>
+      <%= link_to "編集画面へ", edit_micropost_path(@micropost), class: "btn btn-primary" %>
+      <%= link_to "削除する", micropost_path(@micropost), method: :get, class: "btn btn-primary" %>
+      <% end %>
+        </div>         
+      </div>
+    </div>
+  </div>
+</div>
+
+
