@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    attributes:
+      micropost:
+        name: タイトル
+        content: 評価
+        youtube_url: URL
