@@ -1,7 +1,12 @@
 <% flash.each do |key, value| %>
-  <div class="alert alert-<%= bootstrap_alert(key) %>">
-    <strong>
-      <%= value %>
-    </strong>
+  <div class="alert alert-<%= bootstrap_alert(key)%> close-flash">
+    <%= value %>
+    <button type="button" class="close close-button" data-dismiss="alert">
+    <span aria-hidden="true">&times;</span>
+    </button>
   </div>
 <% end %>
+
+
+
+

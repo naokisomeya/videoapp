@@ -1,15 +1,24 @@
 
- <div class="container">
+ <div class="container-fluid">
   <div class="row">
    <% @microposts.each do |micropost| %>
-     <div class="card col-xs-6 col-md-4 col-lg-4 " style="width: 280px;">
+     <div class="card col-xs-8 col-md-4 col-lg-3 " style="width: 280px;">
 	   <img class="card-img-top" src="http://img.youtube.com/vi/<%= micropost.youtube_url.last(11)%>/hqdefault.jpg" alt="カード画像">
 	    <div class="card-body">
-		  <h3 class="card-title"><%= micropost.name %></h3>
-      <%= link_to "詳細を見る", micropost_path(micropost),method: :get, class: "btn btn-primary" %>
+		  <h6 class="card-title"><%= micropost.name %></h6>
+      いいね数:<%= micropost.likes.count %><br>
+      コメント数:<%= micropost.comments.count%><br>
+      <%= link_to "詳細", micropost_path(micropost),method: :get, class: "btn btn-primary" %><br>
+      投稿者:<%= micropost.user.username %>
 	   </div>
     </div>
    <% end %>
 	 </div>
  </div>
 </div>
+
+
+ <%= paginate @microposts %>
+
+
+

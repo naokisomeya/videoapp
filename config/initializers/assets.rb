@@ -12,7 +12,7 @@ Rails.application.config.assets.configure do |env|
   env.export_concurrent = false
 end
 
-Rails.application.config.assets.precompile += %w( application.js )
+Rails.application.config.assets.precompile += %w[application.js]
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
