@@ -17,13 +17,13 @@ commands:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.7.1
+      - image: circleci/ruby:2.7.1-node
     working_directory: ~/videoapp
     steps:
       - setup
   test:
     docker:
-      - image: circleci/ruby:2.7.1
+      - image: circleci/ruby:2.7.1-node
       - image: circleci/postgres:11.6-alpine
         name: "db"
         environment:
