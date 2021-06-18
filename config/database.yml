@@ -15,9 +15,11 @@ development:
 test:
   <<: *default
   database: myapp_test
+  host: <%= ENV.fetch("PGHOST") { 'db' } %>
 
 production:
   <<: *default
-  database: myapp_production
-  username: myapp
+  database: <%= ENV['MYAPP_DATABASE'] %>
+  username: <%= ENV['MYAPP_DATABASE_USERNAME'] %>
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  host: <%= ENV['MYAPP_DATABASE_HOST'] %>

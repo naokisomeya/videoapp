@@ -37,6 +37,7 @@ jobs:
       PGUSER: postgres
       PGPASSWORD: ""
       RAILS_ENV: test
+    working_directory: ~/videoapp
     steps:
       - setup
       - run:
@@ -82,5 +83,5 @@ workflows:
           - test
           filters:
             branches:
-              only:main
+              only: main
          
