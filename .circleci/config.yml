@@ -17,13 +17,13 @@ commands:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.7-node
+      - image: circleci/ruby:2.7.1
     working_directory: ~/videoapp
     steps:
       - setup
   test:
     docker:
-      - image: circleci/ruby:2.7-node
+      - image: circleci/ruby:2.7.1
       - image: circleci/postgres:11.6-alpine
         name: "db"
         environment:
@@ -33,7 +33,6 @@ jobs:
     environment:
       BUNDLE_JOBS: "4"
       BUNDLE_RETRY: "3"
-      BUNDLE_PATH: vendor/bundle
       PGHOST: 127.0.0.1
       PGUSER: postgres
       PGPASSWORD: ""
