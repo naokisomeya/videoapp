@@ -18,7 +18,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.7.1-node
-    app-dir: ~/videoapp
+    #working_directory: ~/videoapp
     steps:
       - setup
   test:
@@ -37,7 +37,7 @@ jobs:
       PGUSER: postgres
       PGPASSWORD: ""
       RAILS_ENV: test
-    app-dir: ~/videoapp
+    #working_directory: ~/videoapp
     steps:
       - setup
       - run:
