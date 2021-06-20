@@ -5,7 +5,7 @@ default: &default
   #####追加#####
   host: db
   username: postgres
-  passowrd:
+  passowrd: ""
   #############
 
 development:
