@@ -5,10 +5,8 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
 
-    #######追加#########################
     environment:
       POSTGRES_HOST_AUTH_METHOD: 'trust'
-    ###################################
 
   web:
     build: .
