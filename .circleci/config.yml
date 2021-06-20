@@ -27,16 +27,16 @@ jobs:
       - image: circleci/postgres:11.6-alpine
         name: "db"
         environment:
-          POSTGRES_USER: "postgres"
-          POSTGRES_DB: "myapp_test"
+          POSTGRES_USER: postgres
+          POSTGRES_DB: myapp_test
           POSTGRES_PASSWORD: ""
     environment:
       BUNDLE_JOBS: "4"
       BUNDLE_RETRY: "3"
       PGHOST: "127.0.0.1"
-      PGUSER: "postgres"
+      PGUSER: postgres
       PGPASSWORD: ""
-      RAILS_ENV: "test"
+      RAILS_ENV: test
     #working_directory: ~/videoapp
     steps:
       - setup
