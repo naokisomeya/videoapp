@@ -21,4 +21,4 @@ production:
   database: <%= ENV['MYAPP_DATABASE'] %>
   username: <%= ENV['MYAPP_DATABASE_USERNAME'] %>
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
-  host: <%= ENV['PGHOST'] || 'db' %>
+
