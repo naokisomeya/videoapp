@@ -6,7 +6,6 @@ default: &default
   username: postgres
   passowrd: ""
 
-
 development:
   <<: *default
   database: myapp_development
@@ -22,4 +21,3 @@ production:
   database: <%= ENV['MYAPP_DATABASE'] %>
   username: <%= ENV['MYAPP_DATABASE_USERNAME'] %>
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
-

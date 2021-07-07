@@ -1,31 +1,22 @@
 version: '3'
 services:
-  #db:
-    #image: postgres
-    #volumes:
-      #- ./tmp/db:/var/lib/postgresql/data
-
+  db:
+    image: postgres
+    volumes:
+     - ./tmp/db:/var/lib/postgresql/data
+  
     environment:
       POSTGRES_HOST_AUTH_METHOD: 'trust'
-
   app:
     build: .
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec puma -C config/puma.rb -e production"
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec puma -C config/puma.rb"
     volumes:
       - .:/myapp
       - public-data:/myapp/public
       - tmp-data:/myapp/tmp
       - log-data:/myapp/log
-    ports:
-      - "3000:3000"
-    #depends_on:
-      #- db
-    #environment:
-    #- "SELENIUM_DRIVER_URL=http://selenium_chrome:4444/wd/hub"
-  #selenium_chrome:
-    #image: selenium/standalone-chrome-debug
-    #logging:
-      #driver: none
+    depends_on:
+      - db
   web:
     build: nginx
     volumes:
@@ -35,8 +26,10 @@ services:
       - "80:80"
     depends_on:
       - app
-volumes:
+  volumes:
     public-data:
     tmp-data:
     log-data:
     db-data:
+
+
