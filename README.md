@@ -1,24 +1,40 @@
-# README
+# Videoapp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+好きな映画、ドラマ、アニメを共有できるアプリです。
 
-Things you may want to cover:
 
-* Ruby version
+* 機能一覧
+* ユーザー登録、ログイン(devise)
+* 投稿機能
+* いいね機能(ajax)
+* コメント機能
+* ページネーション
+* レスポンシブデザイン
+* 管理者機能
 
-* System dependencies
+* バックエンド
+* Ruby 2.7.1
+* Rails 2.6.3
+* PostgreSQL 11.0
 
-* Configuration
+フロントエンド
+* Bootstrap4
 
-* Database creation
+開発
+* VSCode
+* Docker Desktop for Mac
+* docker-compose
+使用Image
+* ruby2.7.1
+* postgres11.0-alpine
+バージョン管理
 
-* Database initialization
+* Git
+* GitHub
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+テスト
+＊　Rspec,Capybara,FactoryBot
+* 単体テスト
+* 統合テスト　(FeatureSpec)
 
 * ...
