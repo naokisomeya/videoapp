@@ -1,3 +1,5 @@
+require "nested_form/engine"
+require "nested_form/builder_mixin"
 RailsAdmin.config do |config|
   config.authenticate_with do
     authenticate_or_request_with_http_basic('Site Message') do |username, password|

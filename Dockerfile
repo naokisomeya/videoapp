@@ -30,4 +30,4 @@ ENTRYPOINT ["entrypoint.sh"]
 
 RUN mkdir -p tmp/sockets
 
-CMD ["rails", "server", "-b", "0.0.0.0"]
+
