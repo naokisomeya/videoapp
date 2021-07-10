@@ -1,4 +1,6 @@
 FROM ruby:2.7.1
+
+ENV RAILS_ENV=production
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 
 ## nodejsとyarnはwebpackをインストールする際に必要
@@ -27,3 +29,5 @@ RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 
 RUN mkdir -p tmp/sockets
+
+CMD ["rails", "server", "-b", "0.0.0.0"]
