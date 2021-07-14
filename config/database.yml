@@ -18,9 +18,8 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  username: myapp
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  encoding: unicode
   host: <%= ENV['PGHOST'] %>
   database: <%= ENV['MYAPP_DATABASE'] %>
-  user:name: <%= ENV['MYAPP_DATABASE_USERNAME'] %>
+  username: <%= ENV['MYAPP_DATABASE_USERNAME'] %>
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
