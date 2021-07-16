@@ -1,40 +1,45 @@
 # Videoapp
 
 好きな映画、ドラマ、アニメを共有できるアプリです。
+<img width="1158" alt="スクリーンショット 2021-07-16 9 52 09" src="https://user-images.githubusercontent.com/71161216/125875669-973f329d-31c0-4f98-85c5-9918668e910a.png">
+***
+## 機能一覧
+ * ユーザー登録、ログイン(devise)
+ * 投稿機能
+ * いいね機能(ajax)
+ * コメント機能
+ * ページネーション(kaminari)
+ * レスポンシブデザイン
+ * 管理者機能(rails_admin)
+ ***
+## インフラ
 
+***
 
-* 機能一覧
-* ユーザー登録、ログイン(devise)
-* 投稿機能
-* いいね機能(ajax)
-* コメント機能
-* ページネーション
-* レスポンシブデザイン
-* 管理者機能
-
-* バックエンド
+## バックエンド
 * Ruby 2.7.1
 * Rails 2.6.3
 * PostgreSQL 11.0
-
-フロントエンド
+***
+## フロントエンド
 * Bootstrap4
-
-開発
+***
+## 開発
 * VSCode
 * Docker Desktop for Mac
 * docker-compose
-使用Image
+***
+## 使用Image
 * ruby2.7.1
-* postgres11.0-alpine
-バージョン管理
+* postgres
+***
 
+## バージョン管理
 * Git
 * GitHub
-
-テスト
-＊　Rspec,Capybara,FactoryBot
+***
+## テスト
+* Rspec,Capybara,FactoryBot
 * 単体テスト
 * 統合テスト　(FeatureSpec)
-
-* ...
+***
