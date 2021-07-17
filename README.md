@@ -1,6 +1,7 @@
 # Videoapp
 
 好きな映画、ドラマ、アニメを共有できるアプリです。
+URL:http://35.75.160.225
 <img width="1158" alt="スクリーンショット 2021-07-16 9 52 09" src="https://user-images.githubusercontent.com/71161216/125875669-973f329d-31c0-4f98-85c5-9918668e910a.png">
 ***
 ## 機能一覧
