@@ -12,7 +12,11 @@
  * レスポンシブデザイン
  * 管理者機能(rails_admin)
  ***
-## インフラ
+## インフラ(AWS)
+* VPC
+* EC2
+* RDS
+
 
 ***
 
@@ -41,5 +45,8 @@
 ## テスト
 * Rspec,Capybara,FactoryBot
 * 単体テスト
-* 統合テスト　(FeatureSpec)
+* 統合テスト(FeatureSpec)
+Githubにpushした際、CircleCIによる自動テスト
 ***
+## ER図
+<img width="710" alt="スクリーンショット 2021-07-17 8 00 08" src="https://user-images.githubusercontent.com/71161216/126020963-46cd94e4-ef14-41cd-b49b-da9da9797380.png">

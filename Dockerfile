@@ -3,6 +3,7 @@ FROM ruby:2.7.1
 ENV RAILS_ENV=production
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 RUN apt-get install -y vim
+RUN apt-get install -y graphviz
 
 ## nodejsとyarnはwebpackをインストールする際に必要
 # yarnパッケージ管理ツールをインストール
