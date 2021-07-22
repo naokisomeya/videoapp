@@ -2,7 +2,7 @@
 ## サービス概要
 好きな映画、ドラマ、アニメを共有できるアプリです。  
 
-※注意 GoogleChromeではアクセスできない可能性があり ます。safariなどのブラウザをおすすめ致します。
+
 
   URL:https://video-app.work/
 <img width="1158" alt="スクリーンショット 2021-07-16 9 52 09" src="https://user-images.githubusercontent.com/71161216/125875669-973f329d-31c0-4f98-85c5-9918668e910a.png">
