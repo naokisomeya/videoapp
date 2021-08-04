@@ -38,6 +38,8 @@
 * VPC
 * EC2
 * RDS
+* Route53
+* ALB
 
 
 ***
@@ -68,7 +70,10 @@
 * Rspec,Capybara,FactoryBot
 * 単体テスト
 * 統合テスト(FeatureSpec)
-Githubにpushした際、CircleCIによる自動テスト
 ***
 ## ER図
 <img width="710" alt="スクリーンショット 2021-07-17 8 00 08" src="https://user-images.githubusercontent.com/71161216/126020963-46cd94e4-ef14-41cd-b49b-da9da9797380.png">
+
+***
+##  クラウドアーキテクチャ
+<img width="674" alt="スクリーンショット 2021-07-23 11 52 39" src="https://user-images.githubusercontent.com/71161216/126732768-df98e672-00d2-4446-b36a-0982c5d03104.png">
